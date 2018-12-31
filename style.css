@@ -10,7 +10,7 @@ img {
 max-width: 100%
 }
 .main {
-margin-top: 30px;
+margin-top: 52px;
 }
 
 /*paddingfix*/
@@ -33,6 +33,7 @@ overflow: hidden;
 position: fixed;
 top: 0;
 width: 100%;
+z-index: 2;
 }
 .activey{
 background-color: rgb(37, 18, 24);
@@ -44,21 +45,61 @@ width: 230px;
 padding: 5px;
 filter: grayscale(100%);
 transition: 1s;
+z-index: 1;
 }
 .gallery img:hover {
 filter: grayscale(0%);
 transform: scale(1.025);
+z-index: 1;
 }
 .centered {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+z-index: 1;
 }
 .imgcontain {
 position: relative;
 text-align: center;
 color: white;
+z-index: 1;
+}
+
+/**/
+.icon ul {
+display: flex;
+text-align: center;
+
+z-index: 1;
+}
+.icon ul li {
+background: #000;
+margin: 10px;
+font-size: 24px;
+transition: .5s;
+margin-left: auto;
+margin-right: auto;
+}
+.icon ul li a {
+width: 60px;
+padding: 13px 0;
+display: block;
+
+color: #fff;
+}
+.icon ul li:nth-child(1) {
+background: #bc2a8d;
+}
+.icon ul li:nth-child(2) {
+background: #bc2a8d;  
+}
+.icon ul li:nth-child(3) {
+background: #bb0000;   
+}
+.icon ul li:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
 /*next n back*/
