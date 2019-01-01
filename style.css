@@ -5,6 +5,7 @@ padding: 0px;
 }
 body {
 overflow-x:hidden;
+max-width:100%;
 }
 img {
 max-width: 100%
